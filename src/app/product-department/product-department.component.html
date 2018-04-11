@@ -1,0 +1,4 @@
+  <span *ngFor="let name of product.department; index as i" [style.color]="'green'">
+    <span>{{ name }}</span>
+    <span [style.color]="'red'">{{ i < product.department.length - 1 ? '>' : ''}}</span>
+  </span>
