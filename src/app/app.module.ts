@@ -11,7 +11,8 @@ import { PriceDisplayComponent } from './price-display/price-display.component';
 import { ProductDepartmentComponent } from './product-department/product-department.component';
 import { FormsDemoComponent } from './forms-demo/forms-demo.component';
 import { FormWithBuilderComponent } from './form-with-builder/form-with-builder.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { SimpleHttpComponent } from './simple-http/simple-http.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,14 @@ import { FormWithBuilderComponent } from './form-with-builder/form-with-builder.
     PriceDisplayComponent,
     ProductDepartmentComponent,
     FormsDemoComponent,
-    FormWithBuilderComponent
+    FormWithBuilderComponent,
+    SimpleHttpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
